@@ -1,0 +1,9 @@
+set from        = "kfv@irbug.org"
+
+set smtp_url    = "smtp://kfv@irbug.org@mail.kfv.io:587"
+set smtp_pass   = "`pass email/irbug.org`"
+
+set spoolfile 	= "/usr/home/kfv/Mail/irbug/Inbox"
+set record 	= "/usr/home/kfv/Mail/irbug/Sent"
+set postponed 	= "/usr/home/kfv/Mail/irbug/Drafts"
+set trash 	= "/usr/home/kfv/Mail/irbug/Trash"

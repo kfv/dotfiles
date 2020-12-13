@@ -1,0 +1,57 @@
+" ==============
+"    vim-plug
+" ==============
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+	  \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+	Plug 'airblade/vim-rooter'
+	Plug 'jiangmiao/auto-pairs'
+	Plug 'preservim/nerdtree'
+	Plug 'dense-analysis/ale'
+call plug#end()
+
+" ==============
+"      ALE
+" ==============
+let g:ale_completion_autoimport = 1
+let g:ale_completion_enabled = 1
+let g:ale_linters = {'c': ['cc', 'clangd']}
+let g:ale_c_clangd_executable = 'clangd10'
+let g:ale_completion_max_suggestions = 10
+
+" ==============
+"    NERDTree
+" ==============
+" Close NERDTree if it's the only window left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") &&
+  \ b:NERDTree.isTabTree()) | q | endif
+" Automatically launch NERDTree
+autocmd VimEnter * NERDTree
+" NERDTree shouldn't be the default window
+autocmd VimEnter * wincmd p
+" Set working directory to the file's dir
+autocmd BufEnter * lcd %:p:h
+hi NERDTreeCWD ctermfg=green
+
+" ==============
+"    personal
+" ==============
+set mouse=
+set ttymouse=
+hi Comment ctermfg=grey
+hi Directory ctermfg=cyan
+hi SignColumn ctermbg=NONE
+hi CursorLine ctermfg=NONE
+hi over80 ctermbg=red ctermfg=white
+hi VertSplit cterm=NONE ctermbg=NONE
+hi Search ctermbg=yellow ctermfg=black
+hi Visual ctermbg=magenta ctermfg=white
+hi StatusLine cterm=NONE ctermbg=black ctermfg=white
+hi StatusLineNC cterm=NONE ctermbg=black ctermfg=grey
+hi SpellBad cterm=underline ctermbg=NONE ctermfg=red
+call matchadd("over80", "\\%>80v.\\+", 10, 4)

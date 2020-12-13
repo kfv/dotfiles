@@ -1,0 +1,7 @@
+# sidebar navigation -----------------------------------------------------------
+bind index,pager <down> sidebar-next
+bind index,pager <up> sidebar-prev
+bind index,pager <right> sidebar-open
+
+# global index and pager shortcuts ---------------------------------------------
+bind index,pager @ compose-to-sender

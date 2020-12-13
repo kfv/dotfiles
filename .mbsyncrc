@@ -1,0 +1,158 @@
+# kfv --------------------------------------------------------------------------
+
+IMAPAccount kfv
+Host mail.kfv.io
+User kfv@kfv.io
+PassCmd "pass email/kfv.io"
+SSLType IMAPS
+
+IMAPStore kfv-remote
+Account kfv
+
+MaildirStore kfv-local
+Subfolders Verbatim
+Path /usr/home/kfv/Mail/kfv/
+Inbox /usr/home/kfv/Mail/kfv/Inbox
+
+Channel kfv-inbox
+Master :kfv-remote:"INBOX"
+Slave :kfv-local:"INBOX"
+Create Both
+Expunge Both
+
+Channel kfv-drafts
+Master :kfv-remote:"Drafts"
+Slave :kfv-local:"Drafts"
+Create Both
+Expunge Both
+
+Channel kfv-sent
+Master :kfv-remote:"Sent"
+Slave :kfv-local:"Sent"
+Create Both
+Expunge Both
+
+Channel kfv-trash
+Master :kfv-remote:"Trash"
+Slave :kfv-local:"Trash"
+Create Both
+Expunge Both
+
+Channel kfv-junk
+Master :kfv-remote:"Junk"
+Slave :kfv-local:"Junk"
+Create Both
+Expunge Both
+
+Group kfv
+Channel kfv-inbox
+Channel kfv-drafts
+Channel kfv-sent
+Channel kfv-trash
+Channel kfv-junk
+
+# jail -------------------------------------------------------------------------
+
+IMAPAccount jail
+Host mail.kfv.io
+User kfv@jail.io
+PassCmd "pass email/jail.io"
+SSLType IMAPS
+
+IMAPStore jail-remote
+Account jail
+
+MaildirStore jail-local
+Subfolders Verbatim
+Path /usr/home/kfv/Mail/jail/
+Inbox /usr/home/kfv/Mail/jail/Inbox
+
+Channel jail-inbox
+Master :jail-remote:"INBOX"
+Slave :jail-local:"INBOX"
+Create Both
+Expunge Both
+
+Channel jail-drafts
+Master :jail-remote:"Drafts"
+Slave :jail-local:"Drafts"
+Create Both
+Expunge Both
+
+Channel jail-sent
+Master :jail-remote:"Sent"
+Slave :jail-local:"Sent"
+Create Both
+Expunge Both
+
+Channel jail-trash
+Master :jail-remote:"Trash"
+Slave :jail-local:"Trash"
+Create Both
+Expunge Both
+
+Channel jail-junk
+Master :jail-remote:"Junk"
+Slave :jail-local:"Junk"
+Create Both
+Expunge Both
+
+Group jail
+Channel jail-inbox
+Channel jail-drafts
+Channel jail-sent
+Channel jail-trash
+Channel jail-junk
+
+# irbug ------------------------------------------------------------------------
+
+IMAPAccount irbug
+Host mail.kfv.io
+User kfv@irbug.org
+PassCmd "pass email/irbug.org"
+SSLType IMAPS
+
+IMAPStore irbug-remote
+Account irbug
+
+MaildirStore irbug-local
+Subfolders Verbatim
+Path /usr/home/kfv/Mail/irbug/
+Inbox /usr/home/kfv/Mail/irbug/Inbox
+
+Channel irbug-inbox
+Master :irbug-remote:"INBOX"
+Slave :irbug-local:"INBOX"
+Create Both
+Expunge Both
+
+Channel irbug-drafts
+Master :irbug-remote:"Drafts"
+Slave :irbug-local:"Drafts"
+Create Both
+Expunge Both
+
+Channel irbug-sent
+Master :irbug-remote:"Sent"
+Slave :irbug-local:"Sent"
+Create Both
+Expunge Both
+
+Channel irbug-trash
+Master :irbug-remote:"Trash"
+Slave :irbug-local:"Trash"
+Create Both
+Expunge Both
+
+Channel irbug-junk
+Master :irbug-remote:"Junk"
+Slave :irbug-local:"Junk"
+Create Both
+Expunge Both
+
+Group irbug
+Channel irbug-inbox
+Channel irbug-drafts
+Channel irbug-sent
+Channel irbug-trash
+Channel irbug-junk

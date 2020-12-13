@@ -1,0 +1,49 @@
+#  neomutt colourscheme
+#
+# basic colors -----------------------------------------------------------------
+color	error		white		default
+color	message		white		default
+color	attachment	green		default
+color	search		black		white
+color	indicator	red		default
+color	tree		red		default
+
+# sidebarh ---------------------------------------------------------------------
+color	sidebar_indicator	red		default
+color	sidebar_highlight	white		black
+color	sidebar_spoolfile	default		default
+color	sidebar_new		default		default
+color	sidebar_ordinary	default		default
+color	sidebar_flagged		default		default
+color	sidebar_divider		default		default
+
+
+# index ------------------------------------------------------------------------
+
+color	index		blue		default		"~R~p!~F"      # me
+color	index		red		color232	"~D"	       # deleted
+color	index		yellow		default		"~F"	       # flagged
+color	index		green		default		"~G"	       # enced
+
+# message headers --------------------------------------------------------------
+
+color	hdrdefault	cyan		default
+color	header		yellow		default		"^(Date)"
+color	header		yellow		default		"^(From)"
+color	header		yellow		default		"^(To)"
+color	header		yellow		default		"^(Cc)"
+color	header		yellow		default		"^(Subject)"
+
+# body -------------------------------------------------------------------------
+color	bold		brightcyan	default
+color	underline	cyan		default
+color	quoted		yellow		default
+color	quoted1		magenta		default
+color	quoted2		magenta		default
+color	quoted3		magenta		default
+color	quoted4		magenta		default
+color	quoted5		magenta		default
+color	signature	cyan		default
+color	body		cyan		default	"(ftp|http|https|ssh|gopher\
+						|news|telnet|finger)://[^ >]+"
+color	body		cyan		default	"[-a-z_0-9.]+@[-a-z_0-9.]+"

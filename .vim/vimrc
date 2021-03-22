@@ -37,8 +37,10 @@ hi NERDTreeCWD ctermfg=green
 " ==============
 "    personal
 " ==============
+set number
 set mouse=
 set ttymouse=
+hi LineNr ctermfg=grey
 hi Comment ctermfg=grey
 hi Directory ctermfg=cyan
 hi SignColumn ctermbg=NONE

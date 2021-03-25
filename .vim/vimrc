@@ -1,7 +1,6 @@
 " ==============
 "    vim-plug
 " ==============
-
 if empty(glob('~/.vim/autoload/plug.vim'))
 	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
 	  \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -15,10 +14,16 @@ call plug#begin('~/.vim/plugged')
 	Plug 'prabirshrestha/async.vim'
 	Plug 'prabirshrestha/vim-lsp'
 	Plug 'mattn/vim-lsp-settings'
-	Plug 'piec/vim-lsp-clangd'
 	Plug 'prabirshrestha/asyncomplete.vim'
 	Plug 'prabirshrestha/asyncomplete-lsp.vim'
 call plug#end()
+
+" ==============
+"    vim-lsp
+" ==============
+let g:lsp_settings = {
+\  'clangd': {'cmd': ['clangd', '--enable-config', '--background-index']},
+\}
 
 " ==============
 "    NERDTree

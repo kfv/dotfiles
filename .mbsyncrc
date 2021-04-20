@@ -15,32 +15,32 @@ Path /usr/home/kfv/Mail/kfv/
 Inbox /usr/home/kfv/Mail/kfv/Inbox
 
 Channel kfv-inbox
-Master :kfv-remote:"INBOX"
-Slave :kfv-local:"INBOX"
+Far :kfv-remote:"INBOX"
+Near :kfv-local:"INBOX"
 Create Both
 Expunge Both
 
 Channel kfv-drafts
-Master :kfv-remote:"Drafts"
-Slave :kfv-local:"Drafts"
+Far :kfv-remote:"Drafts"
+Near :kfv-local:"Drafts"
 Create Both
 Expunge Both
 
 Channel kfv-sent
-Master :kfv-remote:"Sent"
-Slave :kfv-local:"Sent"
+Far :kfv-remote:"Sent"
+Near :kfv-local:"Sent"
 Create Both
 Expunge Both
 
 Channel kfv-trash
-Master :kfv-remote:"Trash"
-Slave :kfv-local:"Trash"
+Far :kfv-remote:"Trash"
+Near :kfv-local:"Trash"
 Create Both
 Expunge Both
 
 Channel kfv-junk
-Master :kfv-remote:"Junk"
-Slave :kfv-local:"Junk"
+Far :kfv-remote:"Junk"
+Near :kfv-local:"Junk"
 Create Both
 Expunge Both
 
@@ -68,32 +68,32 @@ Path /usr/home/kfv/Mail/jail/
 Inbox /usr/home/kfv/Mail/jail/Inbox
 
 Channel jail-inbox
-Master :jail-remote:"INBOX"
-Slave :jail-local:"INBOX"
+Far :jail-remote:"INBOX"
+Near :jail-local:"INBOX"
 Create Both
 Expunge Both
 
 Channel jail-drafts
-Master :jail-remote:"Drafts"
-Slave :jail-local:"Drafts"
+Far :jail-remote:"Drafts"
+Near :jail-local:"Drafts"
 Create Both
 Expunge Both
 
 Channel jail-sent
-Master :jail-remote:"Sent"
-Slave :jail-local:"Sent"
+Far :jail-remote:"Sent"
+Near :jail-local:"Sent"
 Create Both
 Expunge Both
 
 Channel jail-trash
-Master :jail-remote:"Trash"
-Slave :jail-local:"Trash"
+Far :jail-remote:"Trash"
+Near :jail-local:"Trash"
 Create Both
 Expunge Both
 
 Channel jail-junk
-Master :jail-remote:"Junk"
-Slave :jail-local:"Junk"
+Far :jail-remote:"Junk"
+Near :jail-local:"Junk"
 Create Both
 Expunge Both
 
@@ -121,32 +121,32 @@ Path /usr/home/kfv/Mail/irbug/
 Inbox /usr/home/kfv/Mail/irbug/Inbox
 
 Channel irbug-inbox
-Master :irbug-remote:"INBOX"
-Slave :irbug-local:"INBOX"
+Far :irbug-remote:"INBOX"
+Near :irbug-local:"INBOX"
 Create Both
 Expunge Both
 
 Channel irbug-drafts
-Master :irbug-remote:"Drafts"
-Slave :irbug-local:"Drafts"
+Far :irbug-remote:"Drafts"
+Near :irbug-local:"Drafts"
 Create Both
 Expunge Both
 
 Channel irbug-sent
-Master :irbug-remote:"Sent"
-Slave :irbug-local:"Sent"
+Far :irbug-remote:"Sent"
+Near :irbug-local:"Sent"
 Create Both
 Expunge Both
 
 Channel irbug-trash
-Master :irbug-remote:"Trash"
-Slave :irbug-local:"Trash"
+Far :irbug-remote:"Trash"
+Near :irbug-local:"Trash"
 Create Both
 Expunge Both
 
 Channel irbug-junk
-Master :irbug-remote:"Junk"
-Slave :irbug-local:"Junk"
+Far :irbug-remote:"Junk"
+Near :irbug-local:"Junk"
 Create Both
 Expunge Both
 

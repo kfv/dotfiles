@@ -10,7 +10,7 @@ color	tree		red		default
 
 # sidebarh ---------------------------------------------------------------------
 color	sidebar_indicator	red		default
-color	sidebar_highlight	white		black
+color	sidebar_highlight	black		red
 color	sidebar_spoolfile	default		default
 color	sidebar_new		default		default
 color	sidebar_ordinary	default		default

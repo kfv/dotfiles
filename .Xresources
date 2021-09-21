@@ -4,7 +4,7 @@ st.bold_font:		0
 
 ! Colours: 0-7 normal, 8-15 bold
 ! Black
-st.color0:		#2E3440
+st.color0:		#000000
 st.color8:		#303030
 ! Red
 st.color1:		#ff6161

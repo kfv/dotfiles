@@ -1,0 +1,9 @@
+set from        = "faraz@vahedi.io"
+
+set smtp_url    = "smtp://faraz@vahedi.io@mail.kfv.io:587"
+set smtp_pass   = "`pass email/vahedi.io`"
+
+set spoolfile 	= "/usr/home/kfv/Mail/vahedi/Inbox"
+set record 	= "/usr/home/kfv/Mail/vahedi/Sent"
+set postponed 	= "/usr/home/kfv/Mail/vahedi/Drafts"
+set trash 	= "/usr/home/kfv/Mail/vahedi/Trash"

@@ -62,18 +62,26 @@ set sidebar_indent_string = "  "
 set sidebar_format = "%D %* [%?N?%N/?%S]"
 
 # mailbox config --------------------------------------------------------------
-named-mailboxes "KFV"	=kfv/Inbox
-mailboxes		=kfv/Sent
-mailboxes		=kfv/Drafts
-mailboxes		=kfv/Trash
-named-mailboxes "JAIL"	=jail/Inbox
-mailboxes		=jail/Sent
-mailboxes		=jail/Drafts
-mailboxes		=jail/Trash
-named-mailboxes "IRBUG"	=irbug/Inbox
-mailboxes		=irbug/Sent
-mailboxes		=irbug/Drafts
-mailboxes		=irbug/Trash
+named-mailboxes "KFV"		=kfv/Inbox
+mailboxes			=kfv/Sent
+mailboxes			=kfv/Junk
+mailboxes			=kfv/Trash
+mailboxes			=kfv/Drafts
+named-mailboxes "JAIL"		=jail/Inbox
+mailboxes			=jail/Sent
+mailboxes			=jail/Junk
+mailboxes			=jail/Trash
+mailboxes			=jail/Drafts
+named-mailboxes "IRBUG"		=irbug/Inbox
+mailboxes			=irbug/Sent
+mailboxes			=irbug/Junk
+mailboxes			=irbug/Trash
+mailboxes			=irbug/Drafts
+named-mailboxes "VAHEDI"        =vahedi/Inbox
+mailboxes                       =vahedi/Sent
+mailboxes                       =vahedi/Junk
+mailboxes                       =vahedi/Trash
+mailboxes                       =vahedi/Drafts
 
 # GPG/PGP ---------------------------------------------------------------------
 set pgp_default_key = "C68BD5EB845996F1"
@@ -124,6 +132,7 @@ set spoolfile = "+kfv/Inbox"
 source ~/.neomutt/accounts/kfv
 
 # use different addresses depending on the mailbox ----------------------------
-folder-hook kfv/* 'source ~/.neomutt/accounts/kfv'
-folder-hook jail/* 'source ~/.neomutt/accounts/jail'
-folder-hook irbug/* 'source ~/.neomutt/accounts/irbug'
+folder-hook kfv/*     'source ~/.neomutt/accounts/kfv'
+folder-hook jail/*    'source ~/.neomutt/accounts/jail'
+folder-hook irbug/*   'source ~/.neomutt/accounts/irbug'
+folder-hook vahedi/*  'source ~/.neomutt/accounts/vahedi'

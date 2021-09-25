@@ -32,3 +32,4 @@ hi NERDTreeCWD ctermfg=green
 " Personal Settings
 set number
 colorscheme nord
+set completeopt=menuone,noselect

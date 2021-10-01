@@ -14,3 +14,5 @@ set recolor-darkcolor "#ededed"
 set recolor-lightcolor "#111414"
 set recolor true
 set selection-clipboard clipboard
+set synctex true
+set synctex-editor-command "code -g %{input}:%{line}"

@@ -2,25 +2,6 @@
 local nvlsp  = require('lspconfig')
 local compe  = require('compe')
 
--- LSP Setup
-nvlsp.clangd.setup {
-  cmd = {'clangd-devel', '--enable-config', '--background-index'}
-}
-nvlsp.rust_analyzer.setup {}
-require'lspconfig'.texlab.setup{
-  settings = {
-    texlab = {
-      build = {
-        onSave = true
-      },
-      forwardSearch = {
-        executable = "zathura",
-        args = {"--synctex-forward", "%l:1:%f", "%p"},
-      }
-    }
-  }
-}
-
 -- Comp Setup
 compe.setup {
   enabled = true;
@@ -118,14 +99,38 @@ local on_attach = function(client, bufnr)
 
 end
 
--- Use a loop to conveniently call 'setup' on multiple servers and
--- map buffer local keybindings when the language server attaches
-local servers = { 'clangd', 'rust_analyzer' }
-for _, lsp in ipairs(servers) do
-  nvlsp[lsp].setup {
-    on_attach = on_attach,
-    flags = {
-      debounce_text_changes = 150,
-    }
+-- LSP Setup
+nvlsp.clangd.setup {
+  on_attach = on_attach,
+  cmd = {
+    'clangd-devel',
+    '--enable-config',
+    '--background-index'
+  },
+  flags = {
+    debounce_text_changes = 150,
   }
-end
+}
+nvlsp.rust_analyzer.setup {
+  on_attach = on_attach,
+  flags = {
+    debounce_text_changes = 150,
+  }
+}
+nvlsp.texlab.setup{
+  on_attach = on_attach,
+  settings = {
+    texlab = {
+      build = {
+        onSave = true
+      },
+      forwardSearch = {
+        executable = "zathura",
+        args = {"--synctex-forward", "%l:1:%f", "%p"},
+      }
+    }
+  },
+  flags = {
+    debounce_text_changes = 150,
+  }
+}

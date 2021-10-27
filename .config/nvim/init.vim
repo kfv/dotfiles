@@ -12,6 +12,7 @@ call plug#begin(stdpath('data') . '/plug')
 	Plug 'hrsh7th/nvim-compe'
 	Plug 'arcticicestudio/nord-vim'
 	Plug 'preservim/nerdtree'
+	Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " Load Lua Config - lua/init.lua

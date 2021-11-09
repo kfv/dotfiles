@@ -1,3 +1,6 @@
+# HTML
+text/html; /usr/local/bin/lynx -dump '%s' | more; nametemplate=%s.html; copiousoutput;
+
 # PDF
 application/pdf; /usr/local/bin/zathura %s pdf
 

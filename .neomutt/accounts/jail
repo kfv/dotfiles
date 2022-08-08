@@ -1,9 +1,0 @@
-set from        = "kfv@jail.io"
-
-set smtp_url    = "smtp://kfv@jail.io@mail.kfv.io:587"
-set smtp_pass   = "`pass email/jail.io`"
-
-set spoolfile 	= "/usr/home/kfv/Mail/jail/Inbox"
-set record 	= "/usr/home/kfv/Mail/jail/Sent"
-set postponed 	= "/usr/home/kfv/Mail/jail/Drafts"
-set trash 	= "/usr/home/kfv/Mail/jail/Trash"

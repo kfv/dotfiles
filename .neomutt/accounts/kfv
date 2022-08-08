@@ -1,9 +1,0 @@
-set from        = "kfv@kfv.io"
-
-set smtp_url    = "smtp://kfv@kfv.io@mail.kfv.io:587"
-set smtp_pass   = "`pass email/kfv.io`"
-
-set spoolfile 	= "/usr/home/kfv/Mail/kfv/Inbox"
-set record 	= "/usr/home/kfv/Mail/kfv/Sent"
-set postponed 	= "/usr/home/kfv/Mail/kfv/Drafts"
-set trash 	= "/usr/home/kfv/Mail/kfv/Trash"

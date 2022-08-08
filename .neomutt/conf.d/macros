@@ -1,2 +1,0 @@
-macro index,pager <Esc>K "<shell-escape>mbsync -a<enter>" \
-	"run mbsync to synchronize all mailboxes"

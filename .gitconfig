@@ -1,8 +1,13 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 [user]
-	email      = kfv@kfv.io
-	name       = Faraz Vahedi
-	signingkey = C68BD5EB845996F1
-[gpg]
-	program    = gpg
+	name = Faraz Vahedi
+	email = kfv@kfv.io
+	signingkey = 8D1D2417105C531C
 [commit]
-	gpgsign    = true
+	gpgsign = true
+[init]
+	defaultBranch = main

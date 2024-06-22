@@ -12,6 +12,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
+# Modular Setup
+export MODULAR_HOME="$HOME/.modular"
+[ -d "$MODULAR_HOME" ] && path+=("$MODULAR_HOME/pkg/packages.modular.com_mojo/bin")
+
 # Homebrew Completions
 if type brew &>/dev/null
 then

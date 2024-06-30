@@ -14,6 +14,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Modular Setup
 export MODULAR_HOME="$HOME/.modular"
+[ -d "$MODULAR_HOME" ] && path+=("$MODULAR_HOME/pkg/packages.modular.com_max/bin")
 [ -d "$MODULAR_HOME" ] && path+=("$MODULAR_HOME/pkg/packages.modular.com_mojo/bin")
 
 # Homebrew Completions

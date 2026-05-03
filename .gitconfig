@@ -13,5 +13,6 @@
 	defaultBranch = main
 [core]
 	autocrlf = input
+	editor = vim
 [push]
 	autoSetupRemote = true

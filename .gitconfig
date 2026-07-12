@@ -19,3 +19,8 @@
 	autoSetupRemote = true
 [credential]
 	helper = osxkeychain
+[sendemail]
+	smtpserver = smtp.mail.me.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = kfv@kfv.io

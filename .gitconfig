@@ -6,7 +6,7 @@
 [user]
 	name = Faraz Vahedi
 	email = kfv@kfv.io
-	signingkey = 8D1D2417105C531C
+	signingkey = 2DDA54F4C573FFBE
 [commit]
 	gpgsign = true
 [init]

@@ -17,3 +17,5 @@
 	excludesFile = ~/.gitignore
 [push]
 	autoSetupRemote = true
+[credential]
+	helper = osxkeychain

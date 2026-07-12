@@ -14,5 +14,6 @@
 [core]
 	autocrlf = input
 	editor = vim
+	excludesFile = ~/.gitignore
 [push]
 	autoSetupRemote = true
